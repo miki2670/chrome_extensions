@@ -1,6 +1,9 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
+// "content_scripts": [{
+//  "matches": [
+//    "<all_urls>"
+//  ],
+//  "js": ["calculator.js"]
+// }],
 
 function calculateTotalAmount() {
 
