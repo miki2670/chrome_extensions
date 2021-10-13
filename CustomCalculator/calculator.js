@@ -1,14 +1,6 @@
-// "content_scripts": [{
-//  "matches": [
-//    "<all_urls>"
-//  ],
-//  "js": ["calculator.js"]
-// }],
-
-function calculateTotalAmount() {
-
+document.getElementById("totalButton").addEventListener("click", function() {
   //let prices = document.getElementsByClassName('amount');
-  let prices = ["300 DKK", "400 DKK", "500 DKK"]
+  let prices = ["300 DKK", "400 DKK", "500 DKK"];
 
   let splitStringArr = [];
 
@@ -26,5 +18,4 @@ function calculateTotalAmount() {
   }
 
   document.getElementById("totalAmount").innerHTML = result + " kr.";
-
-}
+});
