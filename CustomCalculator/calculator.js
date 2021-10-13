@@ -2,13 +2,26 @@
 // http://codingtra.in
 // http://patreon.com/codingtrain
 
-console.log('Kittens of the world, unite as one!');
+function calculateTotalAmount() {
 
-let prices = document.getElementsByClassName('amount');
+  //let prices = document.getElementsByClassName('amount');
+  let prices = ["300 DKK", "400 DKK", "500 DKK"]
 
-let result = 0;
+  let splitStringArr = [];
 
-for (let price of prices) {
+  for (let price of prices) {
 
-  result += price;
+    let tempPrice = price.split(" ");
+    splitStringArr.push(tempPrice[0]);
+
+  }
+
+  let result = 0;
+
+  for (let amount of splitStringArr) {
+    result += +amount;
+  }
+
+  document.getElementById("totalAmount").innerHTML = result + " kr.";
+
 }
