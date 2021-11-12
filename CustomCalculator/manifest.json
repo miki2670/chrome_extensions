@@ -9,9 +9,8 @@
   },
   "content_scripts": [
     {
-    "matches": ["http:///",
-    "https:///"],
-    "js": ["calculator.js"]
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
     }
   ]
 }

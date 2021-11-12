@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Test",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://app.reepay.com/*", "https://app.reepay.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
